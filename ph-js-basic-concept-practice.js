@@ -1,3 +1,5 @@
+//* This questions are practiced from this repo - https://github.com/ismailjosim/js-basic-concept.git (Conceptual Session er practice task)
+
 //* Problem 01:
 //* ===========
 // // A seat planner needs to be created for a new cinema hall. The seats in this cinema hall are designed in such a way that if the seat number is divisible by 3 or 5 and there is no remainder then it will be considered as a 'premium' seat. That is, if the seat number is 1 then it will be a normal seat, if the seat number is 3/5 then it will be a premium seat.
@@ -71,46 +73,46 @@
 
 
 //* Problem 03:
-// A new company, "AlphaCorp", wants to automatically generate a unique employee username for its employees to access their database. This username will be based on some of the employees' personal information.
+// // A new company, "AlphaCorp", wants to automatically generate a unique employee username for its employees to access their database. This username will be based on some of the employees' personal information.
 
-// You need to write a program that takes an object named employee as input, where the employee information will be as follows:
-// { firstName: "John", lastName: "Doe", employeeId: 101, departmentCode: "HR" }
+// // You need to write a program that takes an object named employee as input, where the employee information will be as follows:
+// // { firstName: "John", lastName: "Doe", employeeId: 101, departmentCode: "HR" }
+
+// // // Output:
+// // username: doe101@alphacorp.com
+
+// // Rules:
+// // 👉 First, the first three letters of lastName will be lowercase.
+// // 👉 Then it will be employeeId.
+// // 👉 Next will be @
+// // 👉 From now on, the company name will be in lowercase.
+// // 👉 The last one will be .com.
+
+
+
+// // ADVANCED: Creates a temporary password along with the username.
+// // 👉 If lastName is less than three characters, then all characters of lastName will be used.
+// // 👉 for Password generate use firstname last 3 char + # + departmentCode
 
 // // Output:
-// username: doe101@alphacorp.com
+// // ID: doe101@alphacorp.com, TempPass: jn1#AC
 
-// Rules:
-// 👉 First, the first three letters of lastName will be lowercase.
-// 👉 Then it will be employeeId.
-// 👉 Next will be @
-// 👉 From now on, the company name will be in lowercase.
-// 👉 The last one will be .com.
+// let employee = { firstName: "John", lastName: "Doe", employeeId: 101, departmentCode: "HR" };
+// let companyName = "AlphaCorp";
 
+// let cNameLower = companyName.toLowerCase();
+// // console.log(cNameLower);
 
+// let employeLastName = employee.lastName.slice(0, 3).toLowerCase();
+// // console.log(employeLastName);
 
-// ADVANCED: Creates a temporary password along with the username.
-// 👉 If lastName is less than three characters, then all characters of lastName will be used.
-// 👉 for Password generate use firstname last 3 char + # + departmentCode
+// // ? First Task
+// let employeeEmail = `ID: ${employeLastName}${employee.employeeId}@${cNameLower}.com`
+// console.log(employeeEmail);
 
-// Output:
-// ID: doe101@alphacorp.com, TempPass: jn1#AC
-
-let employee = { firstName: "John", lastName: "Doe", employeeId: 101, departmentCode: "HR" };
-let companyName = "AlphaCorp";
-
-let cNameLower = companyName.toLowerCase();
-// console.log(cNameLower);
-
-let employeLastName = employee.lastName.slice(0, 3).toLowerCase();
-// console.log(employeLastName);
-
-// ? First Task
-let employeeEmail = `ID: ${employeLastName}${employee.employeeId}@${cNameLower}.com`
-console.log(employeeEmail);
-
-// ? Advance Task
-if (employee.lastName.length <= 3) {
-  console.log(`TempPass: ${employee.lastName}#${employee.departmentCode}`);
-} else {
-  console.log("Last Name Characters are more then 3")
-}
+// // ? Advance Task
+// if (employee.lastName.length <= 3) {
+//   console.log(`TempPass: ${employee.lastName}#${employee.departmentCode}`);
+// } else {
+//   console.log("Last Name Characters are more then 3")
+// }
