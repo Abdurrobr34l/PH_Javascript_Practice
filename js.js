@@ -1,29 +1,12 @@
-// //* Q-1
-// let marks = [45, 98, 66, 56, 23, 89, 94];
+//* 2. Interview-Style Questions
+// These sharpen your problem-solving for jobs:
 
-// let toppers = marks.filter((arr) => {
-//   return arr > 90;
-// });
+// Write a function that finds the second largest number in an array.
 
-// console.log(toppers);
+// Reverse a string without using .reverse().
 
-//* Q-2
-let n = 10;
-let arr = [];
+// Check if a string is a palindrome (e.g., "madam").
 
-for (let i = 1; i <= n; i++) {
-  arr.push(i);
-}
-console.log(arr);
+// Find the most frequent element in an array.
 
-let sum = arr.reduce((prev, curr) => {
-  return prev + curr;
-
-});
-console.log("Array numbers sum: " + sum);
-
-let multiply = arr.reduce((prev, curr) => {
-  return prev * curr;
-
-});
-console.log("Array numbers multiply: " + multiply);
+// Write a function that removes all duplicate elements from an array.
