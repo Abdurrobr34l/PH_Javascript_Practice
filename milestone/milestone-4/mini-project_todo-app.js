@@ -1,4 +1,4 @@
-// Todo App (without UI, console-based)
+//* Todo App (without UI, console-based)
 // Add tasks
 // Mark as complete
 // Delete tasks
