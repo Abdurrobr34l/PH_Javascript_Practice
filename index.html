@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>learning DOM</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    section {
+      padding: 50px;
+      padding-bottom: 0;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+
+    p {
+      padding: 30px;
+      border-radius: 10px;
+      background-color: lightcoral;
+    }
+
+    p:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+
+  <a href="./modules-practices/module-25/video-5-comment_section.html">module-25</a>
+  <section id="comment-input-box">
+    <textarea name="" id="comment-textarea" cols="60" rows="5"></textarea>
+    <br>
+    <button id="comment-btn">Post Comment</button>
+  </section>
+
+  <section id="comment-section">
+    <h1>Comments</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, iusto.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, iusto.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, iusto.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, iusto.</p>
+  </section>
+
+  <script src="./js.js"></script>
+</body>
+
+</html>
